@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-canvas: #0d1117;
+  --color-panel: #161b22;
+  --color-surface-elevated: #21262d;
+  --color-row-hover: #1f242c;
+  --color-border-hairline: #30363d;
+  --color-border-subtle: #21262d;
+
+  --color-text-primary: #dfe2eb;
+  --color-text-muted: #8b949e;
+  --color-text-dim: #6e7681;
+
+  --color-bull: #3fb950;
+  --color-bull-strong: #2ea043;
+  --color-bull-bright: #67df70;
+  --color-bear: #f85149;
+  --color-bear-strong: #da3633;
+  --color-link: #58a6ff;
+  --color-vault: #d29922;
+  --color-vault-bright: #fabc45;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #0d1117;
+    color: #dfe2eb;
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Tabular alignment across all numeric interfaces */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Precision Terminal Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Sharp Rectangular Terminal Range Slider */
+input[type="range"].terminal-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: #30363d;
+  outline: none;
+  border-radius: 0;
+}
+
+input[type="range"].terminal-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 16px;
+  background: #58a6ff;
+  border: 1px solid #0d1117;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+
+input[type="range"].terminal-slider::-webkit-slider-thumb:hover {
+  background: #79c0ff;
+  transform: scaleY(1.08);
+}
+
+input[type="range"].terminal-slider::-moz-range-thumb {
+  width: 10px;
+  height: 16px;
+  background: #58a6ff;
+  border: 1px solid #0d1117;
+  border-radius: 1px;
+  cursor: pointer;
+}

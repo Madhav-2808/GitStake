@@ -1,0 +1,8 @@
+{
+  "name": "Dev Terminal Market",
+  "description": "High-frequency synthetic prediction markets and algorithmic staking terminal for open-source repositories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

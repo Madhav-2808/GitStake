@@ -1,0 +1,200 @@
+---
+name: Dev Terminal Market
+colors:
+  surface: '#10141a'
+  surface-dim: '#10141a'
+  surface-bright: '#353940'
+  surface-container-lowest: '#0a0e14'
+  surface-container-low: '#181c22'
+  surface-container: '#1c2026'
+  surface-container-high: '#262a31'
+  surface-container-highest: '#31353c'
+  on-surface: '#dfe2eb'
+  on-surface-variant: '#bdcab8'
+  inverse-surface: '#dfe2eb'
+  inverse-on-surface: '#2d3137'
+  outline: '#879484'
+  outline-variant: '#3e4a3c'
+  surface-tint: '#67df70'
+  primary: '#67df70'
+  on-primary: '#00390d'
+  primary-container: '#3fb950'
+  on-primary-container: '#004311'
+  inverse-primary: '#006e21'
+  secondary: '#a2c9ff'
+  on-secondary: '#00315c'
+  secondary-container: '#0071c7'
+  on-secondary-container: '#f0f4ff'
+  tertiary: '#fabc45'
+  on-tertiary: '#422c00'
+  tertiary-container: '#d19821'
+  on-tertiary-container: '#4c3400'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#83fc89'
+  primary-fixed-dim: '#67df70'
+  on-primary-fixed: '#002105'
+  on-primary-fixed-variant: '#005317'
+  secondary-fixed: '#d3e4ff'
+  secondary-fixed-dim: '#a2c9ff'
+  on-secondary-fixed: '#001c38'
+  on-secondary-fixed-variant: '#004882'
+  tertiary-fixed: '#ffdeaa'
+  tertiary-fixed-dim: '#fabc45'
+  on-tertiary-fixed: '#271900'
+  on-tertiary-fixed-variant: '#5f4100'
+  background: '#10141a'
+  on-background: '#dfe2eb'
+  surface-variant: '#31353c'
+typography:
+  display-lg:
+    fontFamily: Geist
+    fontSize: 48px
+    fontWeight: '700'
+    lineHeight: 56px
+    letterSpacing: -0.03em
+  display-lg-mobile:
+    fontFamily: Geist
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Geist
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Geist
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Geist
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Geist
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Geist
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.02em
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.06em
+  data-metric:
+    fontFamily: JetBrains Mono
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.25rem
+  margin: 1rem
+  margin-desktop: 1.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1rem
+  space-xl: 1.5rem
+---
+
+## Brand & Style
+
+This design system merges the utilitarian developer workspace of modern code-hosting platforms with the hyper-focused urgency of high-frequency financial terminals. It caters to open-source engineers, tech-savvy speculators, and maintainers participating in synthetic prediction markets and algorithmic staking.
+
+The atmosphere is dense, calculated, and high-performance. The interface balances low-distraction dark mode utility with instant visual feedback: sharp contrasts, glowing neon status deltas, and tactile terminal cues evoke absolute precision and market immediacy.
+
+## Colors
+
+The palette is engineered specifically for prolonged, low-fatigue night sessions with instant optical differentiation of transactional and market states.
+
+- **Primary (`#3fb950`)**: Represents bullish momentum, positive yield, long positions, and trade confirmation.
+- **Secondary (`#58a6ff`)**: Illuminates repository links, network protocols, active focus rings, and analytical indicators.
+- **Tertiary (`#d29922`)**: Denotes sponsor tokens, staking liquidity pools, tier-1 rewards, and vault leverage.
+- **Negative / Bearish (`#f85149`)**: Reserved strictly for depreciating valuations, short orders, liquidations, and transaction alerts.
+- **Neutral Canvas (`#0d1117`)**: Base viewport fill, tiered upward through layered container grays (`#161b22`, `#21262d`, `#30363d`) to demarcate panels without introducing color noise.
+
+## Typography
+
+Typography prioritizes tabular clarity and structural density. 
+
+`Geist` drives natural, high-legibility interface copy, dialog titles, and body content. `JetBrains Mono` handles all numerical operations, tickers, transaction hashes, gas estimates, contract IDs, and table indices. Monospaced elements must enforce standard tabular alignment to eliminate jitter during real-time web socket data refreshes.
+
+## Layout & Spacing
+
+The layout adopts a multi-panel fluid dashboard model inspired by financial trading workspaces. Space is treated conservatively, prioritizing high data density and low scroll latency over expansive decorative padding.
+
+- **Desktop (>= 1280px)**: 12-column grid or flexible 3-pane layout (Repository Index, Trading View/Order Graph, Order Book & Position Entry) utilizing `gutter-desktop` (1.25rem) and `margin-desktop` (1.5rem).
+- **Tablet (768px - 1279px)**: 8-column layout with collapsing secondary drawers and tabbed panel switching.
+- **Mobile (< 768px)**: 4-column single-stack structure with anchored sticky bottom sheets for trade execution and order book summaries.
+
+## Elevation & Depth
+
+Visual hierarchy uses crisp planar transitions and controlled neon luminescence rather than heavy drop shadows:
+
+- **Base Layer (`#0d1117`)**: Global canvas background.
+- **Level 1 Panels (`#161b22`)**: Data grids, primary module wrappers, and sparkline viewports bordered by `#30363d` (1px solid).
+- **Level 2 Interactive Cards (`#21262d`)**: Active order book inputs, hover states, and dropdown trays.
+- **Luminescent Accent**: High-priority alert nodes and active stake states use a subtle 0 0 12px neon bloom keyed to the state color (e.g., `rgba(63, 185, 80, 0.2)` for bullish yields, `rgba(248, 81, 73, 0.2)` for short positions).
+
+## Shapes
+
+The interface employs a disciplined, angular aesthetic. Radii are strictly constrained to subtle softening (`0.25rem` default), creating a compact, hardware-like aesthetic suitable for financial terminal displays. Fully rounded and circular geometries are avoided entirely except for round commit avatars and minimal inline status pips.
+
+## Components
+
+### Buttons & Action Triggers
+- **Primary / Long (`#2ea043` / `#3fb950`)**: Sharp corners (`0.25rem`), high-contrast dark text (`#0d1117`), semi-bold. On hover, background shifts to bright emerald with a subtle outer glow.
+- **Danger / Short (`#da3633` / `#f85149`)**: High-contrast dark text or solid crimson backdrop with white text.
+- **Terminal Ghost**: `#21262d` background, `#30363d` border, text in muted code silver (`#8b949e`), active focus rings in `#58a6ff`.
+
+### Inputs & Stake Sliders
+- Background set to `#0d1117`, inset 1px border `#30363d`, text rendered in `JetBrains Mono`.
+- Real-time balance and leverage markers pinned to the right edge with absolute monospace alignment.
+- Precision sliders use sharp, non-rounded rectangular thumbs and 2px neon blue track fills.
+
+### Cards & Data Panels
+- Surface `#161b22`, perimeter 1px border `#30363d`. Headers feature a thin bottom border with monospaced metadata tickers (`REPO/USD`, `STK/COMMIT`).
+- Padding strictly locked to `space-md` (0.75rem) to maximize screen real estate.
+
+### Order Book & Data Tables
+- Alternating row backgrounds are avoided; visual separation is achieved through 1px `#21262d` horizontal borders.
+- Hover states trigger an instantaneous `#1f242c` row highlight.
+- Positive price deltas feature an upward glyph with `#3fb950`; negative deltas feature a downward glyph with `#f85149`.
+- Integrated sparklines must use 1.5px stroke width with zero fill gradient to maintain pure visual legibility.
+
+### Chips & Badges
+- Compact 20px height, 1px border matching the respective status hue, semi-transparent background (12% opacity), text styled with `label-sm` (`JetBrains Mono`).
